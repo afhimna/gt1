@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revolusi Baru Input Harokat</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Noto+Sans+Arabic&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+            color: #ddd;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 10px;
+            overflow: auto;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: rgba(51, 51, 51, 0.9);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: justify;
+            flex-grow: 1; /* Membuat container mengisi ruang kosong */
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+        @keyframes fadeIn {
+            from {
+                transform: scale(0.9);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            font-weight: 600;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            animation: colorChange 3s infinite alternate;
+        }
+        @keyframes colorChange {
+            0% { color: #fff; }
+            100% { color: #1e90ff; }
+        }
+        p {
+            line-height: 1.8;
+            color: #ccc;
+            margin-bottom: 20px;
+            text-indent: 30px;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+        }
+        .highlight {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            background: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+        }
+        .btn:hover {
+            transform: scale(1.1);
+            background: #0056b3;
+        }
+        .copyright {
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #aaa;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            margin-top: auto; /* Memastikan selalu di bagian bawah */
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 0.95rem;
+                text-indent: 20px;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Revolusi Baru Input Harokat</h1>
+
+        <p>Tidak bisa dipungkiri, perkembangan teknologi semakin maju. Salah satunya adalah <strong>pengetikan bahasa Arab</strong>. Namun, hingga saat ini, kendala terbesar yang masih dihadapi adalah <span class="highlight">sulitnya input harakat</span> pada teks Arab di komputer.</p>
+
+        <p>Jika menulis teks Arab di atas kertas, kita bisa langsung menambahkan harakat tanpa hambatan. Namun, dalam dunia digital, harakat harus dimasukkan <strong>satu per satu</strong>. Hal ini membuat proses pengetikan menjadi lambat dan kurang efisien.</p>
+
+        <p>Proses input harakat di komputer juga sangat melelahkan. Untuk menghasilkan satu harakat saja, kita harus menekan <span class="highlight">dua tombol bersamaan</span>. Contohnya, untuk memasukkan <strong>harakat fathah</strong>, kita perlu menekan <code>Shift + W</code>. Selain memperlambat pengetikan, penggunaan tombol <code>Shift</code> secara terus-menerus juga membuat tangan cepat lelah.</p>
+
+        <p>Terkadang, saat ingin berpindah ke huruf berikutnya untuk diberi harakat, kita justru tidak sengaja memblok huruf sebelumnya. Masalah ini sering terjadi dan bisa sangat mengganggu.</p>
+
+        <p>Untuk mengatasi permasalahan ini, kami mengembangkan <strong>TAHRIK</strong>, sebuah <span class="highlight">Notepad khusus</span> yang dirancang agar input harakat lebih cepat dan efisien. Dengan TAHRIK, harakat bisa dimasukkan cukup dengan <strong>satu tombol</strong> tanpa perlu kombinasi <code>Shift</code>, sehingga proses pengetikan menjadi lebih nyaman.</p>
+
+        <p>Selain itu, TAHRIK juga menyediakan beberapa karakter harakat tambahan yang tidak tersedia di keyboard Arab standar, seperti <strong>Alif Khonjariyah (Mad Fathah)</strong> dan lainnya.</p>
+
+        <p>Dengan mengikuti langkah-langkah yang telah disediakan, Anda dapat memasukkan harakat dengan jauh lebih mudah. <strong>Selamat mencoba!</strong></p>
+
+        <div class="button-container">
+            <a href="https://contoh-link.com" class="btn">Coba TAHRIK Sekarang</a>
+        </div>
+    </div>
+
+    <p class="copyright">© 2025 Afhimna Corp. All Rights Reserved.</p>
+</body>
+</html>
