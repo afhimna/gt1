@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revolusi Baru Input Harokat</title>
+    <title>Revolusi Baru Input Harakat</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Noto+Sans+Arabic&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -13,38 +13,40 @@
             margin: 0;
             padding: 0;
         }
-        body {
+        html, body {
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(to right, #1a1a1a, #2c2c2c);
             color: #ddd;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             min-height: 100vh;
             padding: 10px;
-            overflow: auto;
+            width: 100%;
+            overflow-x: hidden;
         }
         .container {
             width: 90%;
             max-width: 800px;
-            background: rgba(51, 51, 51, 0.9);
-            padding: 25px;
+            background: rgba(51, 51, 51, 0.95);
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
             border: 1px solid rgba(255, 255, 255, 0.1);
             text-align: justify;
-            flex-grow: 1; /* Membuat container mengisi ruang kosong */
+            opacity: 0;
+            transform: scale(0.9);
             animation: fadeIn 1s ease-in-out forwards;
         }
         @keyframes fadeIn {
             from {
-                transform: scale(0.9);
                 opacity: 0;
+                transform: scale(0.9);
             }
             to {
-                transform: scale(1);
                 opacity: 1;
+                transform: scale(1);
             }
         }
         h1 {
@@ -63,14 +65,19 @@
         p {
             line-height: 1.8;
             color: #ccc;
-            margin-bottom: 20px;
-            text-indent: 30px;
+            margin-bottom: 15px;
+            text-indent: 20px;
             font-size: 1rem;
             font-family: 'Poppins', sans-serif;
+            transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+        p:hover {
+            transform: translateX(10px);
+            color: #fff;
         }
         .highlight {
             background: rgba(255, 255, 255, 0.1);
-            padding: 10px;
+            padding: 8px;
             border-radius: 5px;
             font-weight: bold;
         }
@@ -80,7 +87,7 @@
         }
         .btn {
             display: inline-block;
-            padding: 12px 25px;
+            padding: 15px 30px;
             font-size: 1rem;
             font-weight: bold;
             color: #fff;
@@ -96,12 +103,11 @@
         }
         .copyright {
             text-align: center;
-            padding: 15px;
+            color: #bbb;
             font-size: 0.9rem;
-            color: #aaa;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.05);
-            margin-top: auto; /* Memastikan selalu di bagian bawah */
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out 1s forwards;
         }
         @media (max-width: 600px) {
             h1 {
@@ -109,17 +115,23 @@
             }
             p {
                 font-size: 0.95rem;
-                text-indent: 20px;
+                text-indent: 15px;
             }
             .container {
-                padding: 20px;
+                padding: 15px;
+            }
+            .btn {
+                width: 100%;
+                text-align: center;
+                padding: 12px;
+                font-size: 1rem;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Revolusi Baru Input Harokat</h1>
+        <h1>Pengetikan Arab dan Harakat</h1>
 
         <p>Tidak bisa dipungkiri, perkembangan teknologi semakin maju. Salah satunya adalah <strong>pengetikan bahasa Arab</strong>. Namun, hingga saat ini, kendala terbesar yang masih dihadapi adalah <span class="highlight">sulitnya input harakat</span> pada teks Arab di komputer.</p>
 
@@ -141,5 +153,12 @@
     </div>
 
     <p class="copyright">© 2025 Afhimna Corp. All Rights Reserved.</p>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector(".container").style.opacity = "1";
+            document.querySelector(".container").style.transform = "scale(1)";
+        });
+    </script>
 </body>
 </html>
